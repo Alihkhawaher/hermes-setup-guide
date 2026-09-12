@@ -12,6 +12,8 @@ appears, it came from a tool, not from memory.
 
 | Doc | Covers |
 |---|---|
+| [skills/](skills/) | **The skill files themselves** — 46 vendored + 1 original, offline-installable |
+| [ATTRIBUTION.md](ATTRIBUTION.md) | Upstream sources, licenses, pinned commits |
 | [docs/01-environment.md](docs/01-environment.md) | Prerequisites, install, profile layout, paths, health checks |
 | [docs/02-how-skills-work.md](docs/02-how-skills-work.md) | SKILL.md anatomy, categories, load-on-demand, project vs global |
 | [docs/03-skill-sources.md](docs/03-skill-sources.md) | Bundled, official, skills.sh, GitHub, ClawHub, hand-written, project-local, MCP |
@@ -42,6 +44,22 @@ python scripts/install_catalog.py --apply
 python scripts/verify_installed.py
 ```
 
+## Offline install (the vendored skills)
+
+The skill files themselves are **in this repo** under [`skills/`](skills/), so a clone is a
+complete kit — no registry, no network, no package manager:
+
+```bash
+git clone https://github.com/Alihkhawaher/hermes-setup-guide
+cd hermes-setup-guide
+python scripts/install_from_repo.py             # dry run: what would be copied
+python scripts/install_from_repo.py --apply     # copy into the profile
+```
+
+Verified both ways: against an empty target it reports *47 skill(s) would be copied*, and
+against the fully-provisioned profile it reports *0 … 47 already present*. Upstream
+sources, licenses and pinned commits: [ATTRIBUTION.md](ATTRIBUTION.md).
+
 ## The two install mechanisms (know the difference)
 
 | Path | Command | Tracked for updates? | Use when |
@@ -58,7 +76,7 @@ the skill exists in the hub, because only that one can be updated in place.
 - Windows 10 22H2, no admin rights, git-bash (MSYS) shell
 - Hermes profile `default` → `C:\Users\Ali\AppData\Local\hermes\`
 - Skills root → `C:\Users\Ali\AppData\Local\hermes\skills\`
-- 108 skills enabled, 0 disabled; 51 bundled, 57 local
+- 1 hub-installed, 51 builtin, 56 local — **108 skills enabled, 0 disabled**
 - Node 22 + `npx skills` 1.5.26, `hermes` CLI from the venv
 
 ## License

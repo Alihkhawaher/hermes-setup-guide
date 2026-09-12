@@ -11,35 +11,122 @@
       "command": "npx skills add Abhinavbwj/Skills-Architects --skill '*' -g -a hermes-agent --copy -y",
       "required": true,
       "skills": [
-        {"folder": "architect-foundations", "purpose": "Core architectural practice foundations"},
-        {"folder": "design-theory", "purpose": "Theory and design movements reference"},
-        {"folder": "concept-design", "purpose": "Concept development workflow"},
-        {"folder": "spatial-planning", "purpose": "Space planning and adjacency logic"},
-        {"folder": "building-typology", "purpose": "Typology benchmarks"},
-        {"folder": "building-programming", "purpose": "Program and area scheduling"},
-        {"folder": "building-codes", "purpose": "Code framework, jurisdiction routing"},
-        {"folder": "building-envelope", "purpose": "Envelope design and performance"},
-        {"folder": "building-services", "purpose": "MEP/building services coordination"},
-        {"folder": "building-sustainability", "purpose": "Sustainability and certifications"},
-        {"folder": "structural-systems", "purpose": "Structural systems overview and loading"},
-        {"folder": "fire-life-safety", "purpose": "Fire and life safety, egress"},
-        {"folder": "acoustic-design", "purpose": "Acoustics, STC/IIC targets"},
-        {"folder": "accessibility-design", "purpose": "Accessibility and universal design"},
-        {"folder": "construction-documentation", "purpose": "CD set structure and QA"},
-        {"folder": "material-selection", "purpose": "Materials selection and specification"},
-        {"folder": "daylighting-design", "purpose": "Daylight factor and glare strategy"},
-        {"folder": "architect-calculator", "purpose": "7 calculators: area, cost, U-value, daylight, egress, structural load, energy"},
-        {"folder": "geographic-foundations", "purpose": "Router: detects jurisdiction, loads the right country dossier"},
-        {"folder": "country-saudi-arabia", "purpose": "SBC 201-1001, Civil Defence, Mostadam, NEOM/Qiddiya/Red Sea/Diriyah/ROSHN, Amana workflows"},
-        {"folder": "country-uae", "purpose": "Dubai Building Code, Estidama, Al Sa'fat, UAE Fire & Life Safety"},
-        {"folder": "country-usa", "purpose": "IBC/IRC/IECC/IFC, NFPA, ADA, ASCE, state codes"},
-        {"folder": "country-uk", "purpose": "Building Regs + Approved Documents, BSA 2022, BS 9991/9999"},
-        {"folder": "country-germany", "purpose": "MBO + Landesbauordnungen"},
-        {"folder": "country-india", "purpose": "NBC 2016, ECBC, IS codes, state DCRs"},
-        {"folder": "country-singapore", "purpose": "Singapore code regime"},
-        {"folder": "country-japan", "purpose": "Japan code regime"},
-        {"folder": "country-china", "purpose": "China code regime"},
-        {"folder": "country-australia", "purpose": "NCC and state variations"}
+        {
+          "folder": "architecture/architect-foundations",
+          "purpose": "Core architectural practice foundations"
+        },
+        {
+          "folder": "architecture/design-theory",
+          "purpose": "Theory and design movements reference"
+        },
+        {
+          "folder": "architecture/concept-design",
+          "purpose": "Concept development workflow"
+        },
+        {
+          "folder": "architecture/spatial-planning",
+          "purpose": "Space planning and adjacency logic"
+        },
+        {
+          "folder": "architecture/building-typology",
+          "purpose": "Typology benchmarks"
+        },
+        {
+          "folder": "architecture/building-programming",
+          "purpose": "Program and area scheduling"
+        },
+        {
+          "folder": "architecture/building-codes",
+          "purpose": "Code framework, jurisdiction routing"
+        },
+        {
+          "folder": "architecture/building-envelope",
+          "purpose": "Envelope design and performance"
+        },
+        {
+          "folder": "architecture/building-services",
+          "purpose": "MEP/building services coordination"
+        },
+        {
+          "folder": "architecture/building-sustainability",
+          "purpose": "Sustainability and certifications"
+        },
+        {
+          "folder": "architecture/structural-systems",
+          "purpose": "Structural systems overview and loading"
+        },
+        {
+          "folder": "architecture/fire-life-safety",
+          "purpose": "Fire and life safety, egress"
+        },
+        {
+          "folder": "architecture/acoustic-design",
+          "purpose": "Acoustics, STC/IIC targets"
+        },
+        {
+          "folder": "architecture/accessibility-design",
+          "purpose": "Accessibility and universal design"
+        },
+        {
+          "folder": "architecture/construction-documentation",
+          "purpose": "CD set structure and QA"
+        },
+        {
+          "folder": "architecture/material-selection",
+          "purpose": "Materials selection and specification"
+        },
+        {
+          "folder": "architecture/daylighting-design",
+          "purpose": "Daylight factor and glare strategy"
+        },
+        {
+          "folder": "architecture/architect-calculator",
+          "purpose": "7 calculators: area, cost, U-value, daylight, egress, structural load, energy"
+        },
+        {
+          "folder": "architecture/geographic-foundations",
+          "purpose": "Router: detects jurisdiction, loads the right country dossier"
+        },
+        {
+          "folder": "architecture/country-saudi-arabia",
+          "purpose": "SBC 201-1001, Civil Defence, Mostadam, NEOM/Qiddiya/Red Sea/Diriyah/ROSHN, Amana workflows"
+        },
+        {
+          "folder": "architecture/country-uae",
+          "purpose": "Dubai Building Code, Estidama, Al Sa'fat, UAE Fire & Life Safety"
+        },
+        {
+          "folder": "architecture/country-usa",
+          "purpose": "IBC/IRC/IECC/IFC, NFPA, ADA, ASCE, state codes"
+        },
+        {
+          "folder": "architecture/country-uk",
+          "purpose": "Building Regs + Approved Documents, BSA 2022, BS 9991/9999"
+        },
+        {
+          "folder": "architecture/country-germany",
+          "purpose": "MBO + Landesbauordnungen"
+        },
+        {
+          "folder": "architecture/country-india",
+          "purpose": "NBC 2016, ECBC, IS codes, state DCRs"
+        },
+        {
+          "folder": "architecture/country-singapore",
+          "purpose": "Singapore code regime"
+        },
+        {
+          "folder": "architecture/country-japan",
+          "purpose": "Japan code regime"
+        },
+        {
+          "folder": "architecture/country-china",
+          "purpose": "China code regime"
+        },
+        {
+          "folder": "architecture/country-australia",
+          "purpose": "NCC and state variations"
+        }
       ]
     },
     {
@@ -50,18 +137,54 @@
       "command": "npx skills add AlpacaLabsLLC/skills-for-architects --skill spec-writer --skill master-schedule --skill product-research --skill product-spec-pdf-parser --skill product-match --skill product-pair --skill slide-deck-generator --skill color-palette-generator --skill epd-parser --skill epd-compare --skill site-visit-report --skill meeting-minutes -g -a hermes-agent --copy -y",
       "required": true,
       "skills": [
-        {"folder": "spec-writer", "purpose": "CSI three-part outline specifications"},
-        {"folder": "master-schedule", "purpose": "Product/finish master schedule with CSV library"},
-        {"folder": "product-research", "purpose": "Find products, extract specs, identify alternatives"},
-        {"folder": "product-spec-pdf-parser", "purpose": "Pull specs out of manufacturer PDFs"},
-        {"folder": "product-match", "purpose": "Match a spec against candidate products"},
-        {"folder": "product-pair", "purpose": "Pair related products for a package"},
-        {"folder": "slide-deck-generator", "purpose": "Client presentation decks"},
-        {"folder": "color-palette-generator", "purpose": "Material/colour palette generation"},
-        {"folder": "epd-parser", "purpose": "Environmental Product Declaration parsing"},
-        {"folder": "epd-compare", "purpose": "Compare GWP across alternatives"},
-        {"folder": "site-visit-report", "purpose": "Structured site visit reporting"},
-        {"folder": "meeting-minutes", "purpose": "Minutes with decisions and actions"}
+        {
+          "folder": "aec-products/spec-writer",
+          "purpose": "CSI three-part outline specifications"
+        },
+        {
+          "folder": "aec-products/master-schedule",
+          "purpose": "Product/finish master schedule with CSV library"
+        },
+        {
+          "folder": "aec-products/product-research",
+          "purpose": "Find products, extract specs, identify alternatives"
+        },
+        {
+          "folder": "aec-products/product-spec-pdf-parser",
+          "purpose": "Pull specs out of manufacturer PDFs"
+        },
+        {
+          "folder": "aec-products/product-match",
+          "purpose": "Match a spec against candidate products"
+        },
+        {
+          "folder": "aec-products/product-pair",
+          "purpose": "Pair related products for a package"
+        },
+        {
+          "folder": "aec-products/slide-deck-generator",
+          "purpose": "Client presentation decks"
+        },
+        {
+          "folder": "aec-products/color-palette-generator",
+          "purpose": "Material/colour palette generation"
+        },
+        {
+          "folder": "aec-products/epd-parser",
+          "purpose": "Environmental Product Declaration parsing"
+        },
+        {
+          "folder": "aec-products/epd-compare",
+          "purpose": "Compare GWP across alternatives"
+        },
+        {
+          "folder": "aec-products/site-visit-report",
+          "purpose": "Structured site visit reporting"
+        },
+        {
+          "folder": "aec-products/meeting-minutes",
+          "purpose": "Minutes with decisions and actions"
+        }
       ]
     },
     {
@@ -72,10 +195,22 @@
       "command": "npx skills add anthropics/skills --skill canvas-design --skill frontend-design --skill theme-factory -g -a hermes-agent --copy -y && npx skills add curiositech/some_claude_skills --skill interior-design-expert -g -a hermes-agent --copy -y --full-depth",
       "required": true,
       "skills": [
-        {"folder": "canvas-design", "purpose": "Posters/static art as PNG + PDF, ~40 bundled OFL fonts"},
-        {"folder": "frontend-design", "purpose": "Distinctive visual direction instead of templated defaults"},
-        {"folder": "theme-factory", "purpose": "10 preset colour/font themes for decks, docs, HTML"},
-        {"folder": "interior-design-expert", "purpose": "Space planning, IES lighting, Munsell/NCS colour, style consultation"}
+        {
+          "folder": "design/canvas-design",
+          "purpose": "Posters/static art as PNG + PDF, ~40 bundled OFL fonts"
+        },
+        {
+          "folder": "design/frontend-design",
+          "purpose": "Distinctive visual direction instead of templated defaults"
+        },
+        {
+          "folder": "design/theme-factory",
+          "purpose": "10 preset colour/font themes for decks, docs, HTML"
+        },
+        {
+          "folder": "design/interior-design-expert",
+          "purpose": "Space planning, IES lighting, Munsell/NCS colour, style consultation"
+        }
       ]
     },
     {
@@ -86,7 +221,10 @@
       "command": "hermes skills install \"anthropics/skills/skills/mcp-builder\" --category software-development --yes",
       "required": true,
       "skills": [
-        {"folder": "software-development/mcp-builder", "purpose": "Build and evaluate MCP servers"}
+        {
+          "folder": "software-development/mcp-builder",
+          "purpose": "Build and evaluate MCP servers"
+        }
       ]
     },
     {
@@ -97,7 +235,10 @@
       "command": "see docs/06-authoring-skills.md",
       "required": true,
       "skills": [
-        {"folder": "architecture/villa-lighting-design", "purpose": "Interior + exterior villa lighting, lux/LPD calculator, gypsum ceiling detailing, submittal review checklist"}
+        {
+          "folder": "architecture/villa-lighting-design",
+          "purpose": "Interior + exterior villa lighting, lux/LPD calculator, gypsum ceiling detailing, submittal review checklist"
+        }
       ]
     },
     {
@@ -107,12 +248,36 @@
       "method": "mixed",
       "required": false,
       "skills": [
-        {"folder": "financial-statements", "purpose": "IS/BS/CF generation with variance analysis", "command": "npx skills add anthropics/knowledge-work-plugins --skill financial-statements -g -a hermes-agent --copy -y"},
-        {"folder": "3-statement-model", "purpose": "Fill and link 3-statement model templates", "command": "npx skills add anthropics/financial-services --skill 3-statement-model -g -a hermes-agent --copy -y"},
-        {"folder": "ifrs-accounting-standards-advisor", "purpose": "IFRS treatment advisor", "command": "npx skills add camiloespinoza/ifrs-accounting-standards-advisor -g -a hermes-agent --copy -y --full-depth"},
-        {"folder": "arabic-presentations", "purpose": "RTL-correct, Arabic-first PPTX decks", "command": "npx skills add sultanalsafran/agent-skills --skill arabic-presentations -g -a hermes-agent --copy -y"},
-        {"folder": "rvt-to-ifc", "purpose": "Revit/BIM conversion batch utilities", "command": "npx skills add datadrivenconstruction/ddc_skills_for_ai_agents_in_construction --skill rvt-to-ifc -g -a hermes-agent --copy -y"},
-        {"folder": "skill-creator", "purpose": "Skill authoring + benchmarking/evals", "command": "npx skills add anthropics/skills --skill skill-creator -g -a hermes-agent --copy -y"}
+        {
+          "folder": "financial-statements",
+          "purpose": "IS/BS/CF generation with variance analysis",
+          "command": "npx skills add anthropics/knowledge-work-plugins --skill financial-statements -g -a hermes-agent --copy -y"
+        },
+        {
+          "folder": "3-statement-model",
+          "purpose": "Fill and link 3-statement model templates",
+          "command": "npx skills add anthropics/financial-services --skill 3-statement-model -g -a hermes-agent --copy -y"
+        },
+        {
+          "folder": "ifrs-accounting-standards-advisor",
+          "purpose": "IFRS treatment advisor",
+          "command": "npx skills add camiloespinoza/ifrs-accounting-standards-advisor -g -a hermes-agent --copy -y --full-depth"
+        },
+        {
+          "folder": "arabic-presentations",
+          "purpose": "RTL-correct, Arabic-first PPTX decks",
+          "command": "npx skills add sultanalsafran/agent-skills --skill arabic-presentations -g -a hermes-agent --copy -y"
+        },
+        {
+          "folder": "rvt-to-ifc",
+          "purpose": "Revit/BIM conversion batch utilities",
+          "command": "npx skills add datadrivenconstruction/ddc_skills_for_ai_agents_in_construction --skill rvt-to-ifc -g -a hermes-agent --copy -y"
+        },
+        {
+          "folder": "skill-creator",
+          "purpose": "Skill authoring + benchmarking/evals",
+          "command": "npx skills add anthropics/skills --skill skill-creator -g -a hermes-agent --copy -y"
+        }
       ]
     }
   ]

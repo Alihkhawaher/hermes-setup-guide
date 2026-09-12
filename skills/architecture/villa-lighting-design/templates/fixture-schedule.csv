@@ -1,0 +1,5 @@
+Tag,Space/Location,Maker,Model,Description,Input W,Output lm,Efficacy lm/W,CCT K,CRI,Beam/Type,Cut-out mm,Can depth mm,IP,IK,Dimming,Driver,Mounting,Qty,Notes
+L-01,Majlis,Example Lighting,EX-DL90,Recessed adjustable downlight 36 deg,12,1000,83,3000,90,36,90,95,IP20,,Trailing edge,Integrated,Recessed ceiling,12,target 150 lux on 0.75 m plane
+L-02,Majlis cove,Example Lighting,EX-STR24,24V LED strip 2700K CRI95 14 W/m,14/m,1600/m,114,2700,95,120 deg,na,na,IP20,,0-10 V,Remote,drywall cove lip,18 m,MF 0.8 assumed
+L-03,Facade,Example Lighting,EX-FL65,Wall-graze flood with shield,24,2400,100,3000,80,asymmetric,na,na,IP65,IK08,1-10 V,Remote,wall bracket 2.7 m,8,aim away from neighbour windows
+L-04,Pool surround,Example Lighting,EX-BOL12,12V bollard 2700K,6,300,50,2700,80,downward shield,na,na,IP68,IK10,na,SELV transformer,direct burial 12V,6,RCD 30mA bonded

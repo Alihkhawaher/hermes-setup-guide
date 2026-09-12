@@ -2,7 +2,9 @@
 
 The curated set for an architecture / villa-design practice working in Saudi Arabia,
 on Windows, bilingually. Machine-readable twin: [`catalog/skills-catalog.json`](../catalog/skills-catalog.json).
-Current state on this machine: **47/47 catalog entries present** —
+**The skill files themselves are vendored in [`skills/`](../skills/)** — that folder mirrors
+the layout documented here, so `python scripts/install_from_repo.py --apply` reproduces it
+offline. Current state on this machine: **47/47 catalog entries present** —
 `python scripts/verify_installed.py` says *catalog satisfied*.
 
 > Philosophy: install for capability, prune for precision. Every skill adds a line to

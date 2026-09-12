@@ -86,9 +86,11 @@ hermes backup                   # profile backup
 
 1. Install Git, Node, Python, `gh`, Hermes → [01-environment.md](01-environment.md)
 2. `hermes setup` and confirm `hermes doctor` is clean
-3. `python scripts/install_catalog.py --dry-run` → review → `--apply`
-4. `python scripts/verify_installed.py` → must print *catalog satisfied*
-5. `hermes skills list | tail -1` → note the totals; they should match this profile's
-6. Start a new session so the fresh index loads
+3. **Offline path (no network needed):** `git clone` this repo and
+   `python scripts/install_from_repo.py --apply` — the 47 skills are vendored in `skills/`
+4. **Online path:** `python scripts/install_catalog.py` (dry run) → `--apply`
+5. `python scripts/verify_installed.py` → must print *catalog satisfied*
+6. `hermes skills list | tail -1` → note the totals; they should match this profile's
+7. Start a new session so the fresh index loads
 
 Previous: [06-authoring-skills.md](06-authoring-skills.md)
