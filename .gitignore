@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Scratch
+*.tmp
+.scratch/
+
+# Generated inventory is committed on purpose; local snapshots are not
+catalog/*.local.json

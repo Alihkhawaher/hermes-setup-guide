@@ -1,0 +1,119 @@
+{
+  "$comment": "Curated skill catalog for a Hermes profile. Machine-readable twin of docs/05-catalog.md. `folder` is the path under the skills root; `method` is 'hermes' (hub-tracked, updatable) or 'npx' (Vercel CLI copy). Commands are exact and were verified on Windows.",
+  "profile_root_windows": "%LOCALAPPDATA%\\hermes",
+  "skills_root_windows": "%LOCALAPPDATA%\\hermes\\skills",
+  "groups": [
+    {
+      "group": "AEC & architecture design system",
+      "source": "Abhinavbwj/Skills-Architects (29 skills, whole repo)",
+      "why": "Full architecture practice stack: design theory through construction documents, plus 10 country code dossiers with clause-level regulatory depth and 7 Python calculators.",
+      "method": "npx",
+      "command": "npx skills add Abhinavbwj/Skills-Architects --skill '*' -g -a hermes-agent --copy -y",
+      "required": true,
+      "skills": [
+        {"folder": "architect-foundations", "purpose": "Core architectural practice foundations"},
+        {"folder": "design-theory", "purpose": "Theory and design movements reference"},
+        {"folder": "concept-design", "purpose": "Concept development workflow"},
+        {"folder": "spatial-planning", "purpose": "Space planning and adjacency logic"},
+        {"folder": "building-typology", "purpose": "Typology benchmarks"},
+        {"folder": "building-programming", "purpose": "Program and area scheduling"},
+        {"folder": "building-codes", "purpose": "Code framework, jurisdiction routing"},
+        {"folder": "building-envelope", "purpose": "Envelope design and performance"},
+        {"folder": "building-services", "purpose": "MEP/building services coordination"},
+        {"folder": "building-sustainability", "purpose": "Sustainability and certifications"},
+        {"folder": "structural-systems", "purpose": "Structural systems overview and loading"},
+        {"folder": "fire-life-safety", "purpose": "Fire and life safety, egress"},
+        {"folder": "acoustic-design", "purpose": "Acoustics, STC/IIC targets"},
+        {"folder": "accessibility-design", "purpose": "Accessibility and universal design"},
+        {"folder": "construction-documentation", "purpose": "CD set structure and QA"},
+        {"folder": "material-selection", "purpose": "Materials selection and specification"},
+        {"folder": "daylighting-design", "purpose": "Daylight factor and glare strategy"},
+        {"folder": "architect-calculator", "purpose": "7 calculators: area, cost, U-value, daylight, egress, structural load, energy"},
+        {"folder": "geographic-foundations", "purpose": "Router: detects jurisdiction, loads the right country dossier"},
+        {"folder": "country-saudi-arabia", "purpose": "SBC 201-1001, Civil Defence, Mostadam, NEOM/Qiddiya/Red Sea/Diriyah/ROSHN, Amana workflows"},
+        {"folder": "country-uae", "purpose": "Dubai Building Code, Estidama, Al Sa'fat, UAE Fire & Life Safety"},
+        {"folder": "country-usa", "purpose": "IBC/IRC/IECC/IFC, NFPA, ADA, ASCE, state codes"},
+        {"folder": "country-uk", "purpose": "Building Regs + Approved Documents, BSA 2022, BS 9991/9999"},
+        {"folder": "country-germany", "purpose": "MBO + Landesbauordnungen"},
+        {"folder": "country-india", "purpose": "NBC 2016, ECBC, IS codes, state DCRs"},
+        {"folder": "country-singapore", "purpose": "Singapore code regime"},
+        {"folder": "country-japan", "purpose": "Japan code regime"},
+        {"folder": "country-china", "purpose": "China code regime"},
+        {"folder": "country-australia", "purpose": "NCC and state variations"}
+      ]
+    },
+    {
+      "group": "AEC products, specs & project records",
+      "source": "AlpacaLabsLLC/skills-for-architects (curated 12 of 46)",
+      "why": "Standalone skills that plug into villa work: CSI specs, FF&E product research and schedules, sustainability EPDs, client decks, site reports. The NYC-zoning and studio-framework skills were skipped deliberately.",
+      "method": "npx",
+      "command": "npx skills add AlpacaLabsLLC/skills-for-architects --skill spec-writer --skill master-schedule --skill product-research --skill product-spec-pdf-parser --skill product-match --skill product-pair --skill slide-deck-generator --skill color-palette-generator --skill epd-parser --skill epd-compare --skill site-visit-report --skill meeting-minutes -g -a hermes-agent --copy -y",
+      "required": true,
+      "skills": [
+        {"folder": "spec-writer", "purpose": "CSI three-part outline specifications"},
+        {"folder": "master-schedule", "purpose": "Product/finish master schedule with CSV library"},
+        {"folder": "product-research", "purpose": "Find products, extract specs, identify alternatives"},
+        {"folder": "product-spec-pdf-parser", "purpose": "Pull specs out of manufacturer PDFs"},
+        {"folder": "product-match", "purpose": "Match a spec against candidate products"},
+        {"folder": "product-pair", "purpose": "Pair related products for a package"},
+        {"folder": "slide-deck-generator", "purpose": "Client presentation decks"},
+        {"folder": "color-palette-generator", "purpose": "Material/colour palette generation"},
+        {"folder": "epd-parser", "purpose": "Environmental Product Declaration parsing"},
+        {"folder": "epd-compare", "purpose": "Compare GWP across alternatives"},
+        {"folder": "site-visit-report", "purpose": "Structured site visit reporting"},
+        {"folder": "meeting-minutes", "purpose": "Minutes with decisions and actions"}
+      ]
+    },
+    {
+      "group": "Design & creative",
+      "source": "anthropics/skills + curiositech/some_claude_skills",
+      "why": "Visual design direction, static-art generation, themed deliverables, and a dedicated interior design expert.",
+      "method": "npx",
+      "command": "npx skills add anthropics/skills --skill canvas-design --skill frontend-design --skill theme-factory -g -a hermes-agent --copy -y && npx skills add curiositech/some_claude_skills --skill interior-design-expert -g -a hermes-agent --copy -y --full-depth",
+      "required": true,
+      "skills": [
+        {"folder": "canvas-design", "purpose": "Posters/static art as PNG + PDF, ~40 bundled OFL fonts"},
+        {"folder": "frontend-design", "purpose": "Distinctive visual direction instead of templated defaults"},
+        {"folder": "theme-factory", "purpose": "10 preset colour/font themes for decks, docs, HTML"},
+        {"folder": "interior-design-expert", "purpose": "Space planning, IES lighting, Munsell/NCS colour, style consultation"}
+      ]
+    },
+    {
+      "group": "MCP tooling",
+      "source": "anthropics/skills (hub-installed)",
+      "why": "The reference skill for building MCP servers in Python (FastMCP) or Node/TS. Hub-tracked so `hermes skills update` maintains it.",
+      "method": "hermes",
+      "command": "hermes skills install \"anthropics/skills/skills/mcp-builder\" --category software-development --yes",
+      "required": true,
+      "skills": [
+        {"folder": "software-development/mcp-builder", "purpose": "Build and evaluate MCP servers"}
+      ]
+    },
+    {
+      "group": "Hand-written (the ones that encode your own practice)",
+      "source": "this profile",
+      "why": "Your own procedures. Nothing in the ecosystem covers them.",
+      "method": "manual",
+      "command": "see docs/06-authoring-skills.md",
+      "required": true,
+      "skills": [
+        {"folder": "architecture/villa-lighting-design", "purpose": "Interior + exterior villa lighting, lux/LPD calculator, gypsum ceiling detailing, submittal review checklist"}
+      ]
+    },
+    {
+      "group": "Optional extras (not installed — candidates)",
+      "source": "various",
+      "why": "Relevant to accounting/audit or bilingual work; install on demand.",
+      "method": "mixed",
+      "required": false,
+      "skills": [
+        {"folder": "financial-statements", "purpose": "IS/BS/CF generation with variance analysis", "command": "npx skills add anthropics/knowledge-work-plugins --skill financial-statements -g -a hermes-agent --copy -y"},
+        {"folder": "3-statement-model", "purpose": "Fill and link 3-statement model templates", "command": "npx skills add anthropics/financial-services --skill 3-statement-model -g -a hermes-agent --copy -y"},
+        {"folder": "ifrs-accounting-standards-advisor", "purpose": "IFRS treatment advisor", "command": "npx skills add camiloespinoza/ifrs-accounting-standards-advisor -g -a hermes-agent --copy -y --full-depth"},
+        {"folder": "arabic-presentations", "purpose": "RTL-correct, Arabic-first PPTX decks", "command": "npx skills add sultanalsafran/agent-skills --skill arabic-presentations -g -a hermes-agent --copy -y"},
+        {"folder": "rvt-to-ifc", "purpose": "Revit/BIM conversion batch utilities", "command": "npx skills add datadrivenconstruction/ddc_skills_for_ai_agents_in_construction --skill rvt-to-ifc -g -a hermes-agent --copy -y"},
+        {"folder": "skill-creator", "purpose": "Skill authoring + benchmarking/evals", "command": "npx skills add anthropics/skills --skill skill-creator -g -a hermes-agent --copy -y"}
+      ]
+    }
+  ]
+}
